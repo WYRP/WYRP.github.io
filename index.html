@@ -1,42 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yongru Pan - Robotics Engineer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yongru Pan — Portfolio</title>
+  <meta name="description" content="Projects and resume of Yongru Pan: mechanical design, FEA and embedded systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-    <img src="profile.jpg" alt="Yongru Pan's profile picture" style="width:150px; height:auto; border-radius:50%;">
-    <h1>Yongru Pan</h1>
-    <p>Computer Engineering Student</p>
-</header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Yongru Pan</a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome! I'm a computer engineering student at McGill University with a focus on robotics and mechanical design. I'm passionate about robotics, especially in the areas of dynamics, materials, and autonomous underwater vehicles.</p>
+  <main>
+    <!-- ============ HERO: edit your intro here ============ -->
+    <section class="hero">
+      <div class="wrap">
+        <h1>Hi, I'm Yongru. I design mechanisms and the electronics that drive them.</h1>
+        <p>MSc Mechanical Engineering candidate at the University of Alberta, with a computer engineering degree from McGill. I work across mechanical design, finite element analysis, and embedded systems.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#projects">See my projects</a>
+          <a class="btn btn-secondary" href="resume.html">Read my resume</a>
+        </div>
+      </div>
     </section>
+
+    <!-- ============ PROJECTS (content comes from js/projects.js) ============ -->
     <section id="projects">
-        <h2>Projects</h2>
-        <p>Here you can find some of my past projects, including my work with AUVs and more.</p>
-        <!-- Future project demos can be added here -->
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <div class="filters" id="filters" aria-label="Filter projects by tag"></div>
+        </div>
+        <div class="grid" id="project-grid"></div>
+      </div>
     </section>
-    <section id="cv">
-        <h2>My CV</h2>
-        <a href="YongruPanCV.pdf" download>Download my CV</a>
+
+    <!-- ============ ABOUT / CONTACT ============ -->
+    <section id="about">
+      <div class="wrap about">
+        <h2>About</h2>
+        <div>
+          <p>My thesis, supervised by Prof. Michael Lipsett, is a compliant revolute joint for a soil surface sampler. Before that I led mechanical design for McGill Robotics' autonomous underwater vehicle and wrote motor control firmware on STM32 and Teensy. I like work that sits between mechanical hardware and the code that runs it.</p>
+          <ul class="contact-list">
+            <li>Resume: <a href="resume.html">read online</a> or <a href="assets/resume.pdf" download="Yongru_Pan_Resume.pdf">download PDF</a></li>
+            <li>Email: <a href="mailto:yongru@ualberta.ca">yongru@ualberta.ca</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/winnie-pan-b454471aa" target="_blank" rel="noopener">linkedin.com/in/winnie-pan-b454471aa</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <footer>
-        <p>Connect with me on <a href="https://github.com/WYRP" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/winnie-pan-b454471aa/" target="_blank">LinkedIn</a></p>
-    </footer>
-    <script src="script.js"></script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© <span id="year"></span> Yongru Pan</div>
+  </footer>
+
+  <!-- Project detail popup -->
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" aria-label="Close">×</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

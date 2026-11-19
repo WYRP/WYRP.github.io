@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume — Yongru Pan</title>
+  <meta name="description" content="Resume of Yongru Pan, MSc Mechanical Engineering candidate at the University of Alberta.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Yongru Pan</a>
+      <nav class="nav">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="resume.html" aria-current="page">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="resume">
+      <div class="resume-head">
+        <div>
+          <h1>Yongru Pan</h1>
+          <p class="sub">MSc Mechanical Engineering Candidate · Mechanical Design, FEA and Embedded Systems</p>
+          <p class="sub">Edmonton, AB · <a href="mailto:yongru@ualberta.ca">yongru@ualberta.ca</a> · <a href="https://www.linkedin.com/in/winnie-pan-b454471aa" target="_blank" rel="noopener">LinkedIn</a></p>
+        </div>
+        <a class="btn btn-primary no-print" href="assets/resume.pdf" download="Yongru_Pan_Resume.pdf">Download PDF</a>
+      </div>
+
+      <h2>Summary</h2>
+      <p>Mechanical engineering master's student at the University of Alberta with a computer engineering degree from McGill. Works across mechanical design, finite element analysis, and embedded systems, with hands-on experience in compliant mechanisms, underwater robotics hardware, and motor control firmware.</p>
+
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-top"><h3>MSc, Mechanical Engineering</h3><span class="when">2025 – 2027 (expected)</span></div>
+        <p class="where">University of Alberta, Edmonton, AB · Supervisor: Prof. Michael Lipsett · Thesis: compliant revolute joint for a soil surface sampler</p>
+        <ul>
+          <li>Developing a 1-DOF revolute compliant joint to replace the rigid joints on a soil surface sampler.</li>
+          <li>Compared cross-axis flexural pivots, split-tube, butterfly, and notch flexures through literature review and ANSYS FEA, looking at rotational stiffness, parasitic motion, off-axis stiffness, durability, and manufacturability.</li>
+          <li>Planning experimental validation with B&amp;K accelerometers, a LabJack T7-Pro, and MATLAB data acquisition.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-top"><h3>BEng, Computer Engineering</h3><span class="when">Sep 2021 – May 2025</span></div>
+        <p class="where">McGill University, Montreal, QC</p>
+      </div>
+
+      <h2>Research and Teaching Experience</h2>
+      <div class="entry">
+        <div class="entry-top"><h3>Graduate Research Assistant</h3><span class="when">Nov 2025 – Present</span></div>
+        <p class="where">University of Alberta</p>
+        <ul>
+          <li>Recommissioned a 1-DOF translational compliant joint apparatus and wrote its documentation and operating instructions.</li>
+          <li>Redesigned a legacy drone-mounted door-opening mechanism that rotates, extends and retracts on a leadscrew actuator, and grips.</li>
+          <li>Fabricated the mechanism with polymer 3D printing and brought it to a working prototype.</li>
+          <li>Integrated the payload's electrical system, using DC-DC buck converters to regulate supply voltages and a current sensor to track current draw on the gripper motor to sense the gripping strength.</li>
+          <li>Implemented PWM motor control across three motor channels, driven by a Teensy with joystick input.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-top"><h3>Graduate Teaching Assistant</h3><span class="when">Sep 2026 – Present</span></div>
+        <p class="where">University of Alberta</p>
+        <ul>
+          <li>Lead lab sessions on finite element analysis in ANSYS, taking students through each simulation step.</li>
+          <li>Answer student questions and help them work through the course material.</li>
+          <li>Co-developed a new topology optimization lab with the course professor.</li>
+        </ul>
+      </div>
+
+      <h2>Robotics Experience</h2>
+      <div class="entry">
+        <div class="entry-top"><h3>Mechanical Lead</h3><span class="when">Dec 2021 – Sep 2023</span></div>
+        <p class="where">McGill Robotics (AUV team), Montreal, QC</p>
+        <ul>
+          <li>Revived Clark, a half-finished AUV inherited from the pre-COVID team, by recovering its CAD and redrawing missing parts.</li>
+          <li>Led Clark's frame rebuild for RoboSub 2023: a simpler aluminium-extrusion frame with relocated thrusters that was much easier to balance.</li>
+          <li>Designed hull sealing and waterproofing, including O-ring selection, custom O-rings and grooves for external sensor housings, and a Delrin hull seal.</li>
+          <li>Made Inventor drawings for machined parts, revised with CNC machinists' feedback to reduce tolerance-related leaks.</li>
+          <li>Designed a 3D-printed kill switch held by friction and a magnetic connection.</li>
+        </ul>
+      </div>
+
+      <h2>Industry Experience</h2>
+      <div class="entry">
+        <div class="entry-top"><h3>Marine Electronics Technician Intern</h3><span class="when">Jun 2023 – Sep 2023</span></div>
+        <p class="where">SeaTech Marine</p>
+        <ul>
+          <li>Installed and tested marine electronics (sonar, antennas, GPS) on ships.</li>
+          <li>Worked under an experienced engineer and learned the communication protocols and embedded systems used in shipboard electronics.</li>
+        </ul>
+      </div>
+
+      <h2>Projects</h2>
+      <div class="entry">
+        <div class="entry-top"><h3>STM32 RC Car</h3><span class="when">Apr 2025</span></div>
+        <ul>
+          <li>Wrote real-time motor control firmware for an STM32-based RC car using PWM and FreeRTOS, giving responsive joystick-driven motion.</li>
+          <li>Wrote and debugged low-level firmware to drive DC motors through L9110 drivers and tuned PWM ranges for stable speed and clean direction changes.</li>
+          <li>Designed and maintained the FreeRTOS multitasking setup that runs sensor polling, motor logic, and real-time decision making together.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-top"><h3>Capstone: LLM Integration for the Splash Scripting Language</h3><span class="when">Sep 2024 – Apr 2025</span></div>
+        <ul>
+          <li>Built "smart entity" functionality into Splash, a spatial scripting language written in TypeScript, so scripts can embed LLMs (through LangChain and LangGraph) to interpret sensor and spatial data.</li>
+          <li>Worked on the language implementation itself, including its grammar, AST, semantics, and function declarations.</li>
+          <li>Extended Splash's testing framework to simulate physical environments, so scripts can be tested before they are deployed.</li>
+        </ul>
+      </div>
+      <p class="no-print">Photos and videos of these projects are on the <a href="index.html#projects">projects page</a>.</p>
+
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Mechanical design</dt><dd>SolidWorks, Autodesk Inventor, mechanical drawings, seal and O-ring design, design for CNC machining</dd>
+        <dt>Simulation and analysis</dt><dd>ANSYS Mechanical (FEA), topology optimization, MATLAB, Simulink</dd>
+        <dt>Fabrication</dt><dd>Polymer 3D printing, CNC machining</dd>
+        <dt>Electronics and embedded</dt><dd>STM32, FreeRTOS, Teensy, Arduino, PWM motor control, DC-DC converters, current sensing</dd>
+        <dt>Programming</dt><dd>Python, C, MATLAB, Java, ARM Assembly, VHDL, ROS, Git</dd>
+        <dt>Languages</dt><dd>Cantonese (native), English (fluent), Mandarin (fluent), French (intermediate)</dd>
+      </dl>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© <span id="year"></span> Yongru Pan</div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
