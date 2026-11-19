@@ -115,7 +115,9 @@ window.PROJECTS = [
         body: "The redesign was printed, assembled, and wired into a working bench prototype." },
       { type: "image", src: "assets/projects/drone-door-opener/prototype.jpg", caption: "My working prototype on the bench: gripper, extending arm on the leadscrew actuator, and the control electronics." },
       { type: "video", src: "assets/projects/drone-door-opener/leadscrew-stage-test.mp4", poster: "assets/projects/drone-door-opener/leadscrew-stage-test-poster.jpg", loop: true,
-        caption: "Bench test of the linear stage: driving it with the joystick in my hand, the carriage travels along the leadscrew between the extrusion rails." }
+        caption: "Bench test of the linear stage: driving it with the joystick in my hand, the carriage travels along the leadscrew between the extrusion rails." },
+      { type: "video", src: "assets/projects/drone-door-opener/gripper-head-test.mp4", poster: "assets/projects/drone-door-opener/gripper-head-test-poster.jpg", loop: true,
+        caption: "Bench test of the gripper end of the boom, moving under joystick control." }
     ]
   },
   {
