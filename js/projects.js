@@ -117,7 +117,7 @@ window.PROJECTS = [
       { type: "video", src: "assets/projects/drone-door-opener/leadscrew-stage-test.mp4", poster: "assets/projects/drone-door-opener/leadscrew-stage-test-poster.jpg", loop: true,
         caption: "Bench test of the linear stage: driving it with the joystick in my hand, the carriage travels along the leadscrew between the extrusion rails." },
       { type: "video", src: "assets/projects/drone-door-opener/gripper-head-test.mp4", poster: "assets/projects/drone-door-opener/gripper-head-test-poster.jpg", loop: true,
-        caption: "Bench test of the gripper end of the boom, moving under joystick control." }
+        caption: "Bench test of the gripper opening and closing under joystick control." }
     ]
   },
   {
